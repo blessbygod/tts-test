@@ -8,8 +8,8 @@ function playVideo(timeout) {
 console.log('我在说第' +  index++  + ' 遍;');
 setTimeout(() => {
   var text = '小度小度,,,  ';
-  // text += index % 2 === 0 ? '我从西二旗到五道口怎么走' : '我想看下附近的餐馆';
-  text += '附近的餐馆有哪些？';
+  text += index % 2 === 0 ? '我从西二旗到五道口怎么走' : '我想看下附近的餐馆';
+  // text += '附近的餐馆有哪些？';
   // text += '我从西二旗到五道口怎么走';
   var postData = querystring.stringify({
     //"lan": "zh",    // zh表示中文
